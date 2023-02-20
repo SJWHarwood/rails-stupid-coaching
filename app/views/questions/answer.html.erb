@@ -1,9 +1,19 @@
-<div class="container">
-<h1>Stupid Coaching</h1>
-<%= @message %>
-<p>-You</p>
-<%= @response  %>
-<P>-Your coach</P>
-<%= link_to "Ask a new question" , ask_path %>
+  <h1>Stupid Coaching</h1>
 
+    <blockquote class="blockquote">
+        <%= @message %>
+          <figcaption class="blockquote-footer my-1">
+            <cite title="Source Title"> You</cite>
+        </figcaption>
+    </blockquote>
+
+    <blockquote class="blockquote alert-warning">
+      <%= @response  %>
+        <figcaption class="blockquote-footer my-1">
+          <cite title="Source Title">Your coach</cite>
+      </figcaption>
+    </blockquote>
+
+<div class=" text-decoration-none:">
+ <%= link_to "Ask a new question", ask_path %>
 </div>
